@@ -11,7 +11,7 @@ Instructions for use:
 4) Run app
 5) Load video in tab 1
 6) Crop video to subsection to be analyzed
-7) Choose sampling areas of video or choose to analyze entire video in tab 2
+7) Choose sampling areas of video or choose to analyze entire video (or subregion if cropped in previous step) in tab 2
 8) Process
 9) Generate plots in tab 3
 10) Save resulting displacement data
