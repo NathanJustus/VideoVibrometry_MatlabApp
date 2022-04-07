@@ -8,7 +8,7 @@ t = (0:nf-1)/fs; % time vector
 
 vr.CurrentTime = t0;
 
-I = im2double(im2gray(vr.readFrame));
+I = im2double(turnGray(vr.readFrame));
 I = imcrop(I,crop);
 I = imresize(I,scale);
 
@@ -30,7 +30,7 @@ Vy = zeros([size(I) nf]);
 
 H = waitbar(0,'Please wait...','name','Video Processing Progress');
 for i = 1:nf
-    I = im2double(im2gray(vr.readFrame));
+    I = im2double(turnGray(vr.readFrame));
     I = imcrop(I,crop);
     I = imresize(I,scale);
     
@@ -95,4 +95,14 @@ end
 
 
 close(H)
+
+end
+
+function greyim = turnGray(im)
+    if size(im,3) == 1
+        greyim = im;
+    else
+        greyim = 0.2989*im(:,:,1) + 0.5870*im(:,:,2) + 0.1140*im(:,:,3);
+    end
+end
 
