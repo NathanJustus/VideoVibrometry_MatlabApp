@@ -1,6 +1,7 @@
 #Video Vibrometry Matlab App
 
 Based on [phase-based video vibrometry technique by MIT CSAIL](http://people.csail.mit.edu/nwadhwa/phase-video/).
+This repo also acts as supplementary material for [my stereo vibrometry paper](https://www.mdpi.com/2075-4450/13/4/310/htm), where phase-based video vibrometry is used on multiple synchronized videos to extract 3D vibrational signals from black widow spiderwebs.
 
 App that coordinates the use of phase-based optical flow to get pixel displacement estimates from video motion files.  
 
